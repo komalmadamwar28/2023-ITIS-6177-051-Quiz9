@@ -52,7 +52,7 @@ const pool = mariadb.createPool({
 
 app.get('/say', function(req,res) {
         console.log(req.query.keyword);
-        https.get('https://ean3lx7wdmegvq7koirhdatqla0omgtf.lambda-url.us-east-1.on.aws?name='+req.query.keyword, (resp) => {
+        https.get('https://4lz5mif7wgvvnulx54fv4cpqsq0ixcdl.lambda-url.us-east-2.on.aws?name='+req.query.keyword, (resp) => {
         let data = '';
         resp.on('data', (chunk) => {
           data += chunk;
